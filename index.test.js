@@ -38,6 +38,7 @@ describe('[Exercise 4] Counter', () => {
   // expect(counter.countDown).toBe(utils.Counter.prototype.countDown)
   // test('[6] the FIRST CALL of counter.countDown returns the initial count', () => {})
   expect(counter.count).toEqual(3)
+  expect(counter.countDown()).toEqual(3)
   expect(counter.countDown()).toEqual(2)
   expect(counter.countDown()).toEqual(1)
   expect(counter.countDown()).toEqual(0)
